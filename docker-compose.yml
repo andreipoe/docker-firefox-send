@@ -1,0 +1,17 @@
+version: "3"
+services:
+  web:
+    image: andreipoe/firefox-send
+    build:
+      context: .
+      args:
+          - version=v1.1.0
+    links:
+      - redis
+    ports:
+      - "127.0.0.1:11443:1443"
+    environment:
+      - REDIS_HOST=redis
+      - NODE_ENV=production
+  redis:
+    image: redis:alpine
