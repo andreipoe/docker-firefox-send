@@ -2,7 +2,7 @@ FROM node:8-alpine
 MAINTAINER Andrei Poenaru <andrei.poenaru@gmail.com>
 
 # The Send version to build (git treeish)
-ARG version=v1.1.0
+ARG version=v1.1.2
 
 RUN apk add --no-cache git
 RUN addgroup -S -g 10001 app && adduser -S -D -G app -u 10001 app
