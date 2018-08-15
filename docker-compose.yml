@@ -13,5 +13,7 @@ services:
     environment:
       - REDIS_HOST=redis
       - NODE_ENV=production
+    restart: unless-stopped
   redis:
     image: redis:alpine
+    restart: unless-stopped

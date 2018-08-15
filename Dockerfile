@@ -1,5 +1,5 @@
 FROM node:8-alpine
-MAINTAINER Andrei Poenaru <andrei.poenaru@gmail.com>
+MAINTAINER Andrei Poenaru <donot@keemail.me>
 
 # The Send version to build (git treeish)
 ARG version=v1.1.2
